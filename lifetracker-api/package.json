@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon --ignore 'db/*' server.js",
     "dev-win": "set NODE_ENV=dev && nodemon --ignore 'db/*' server.js",
-    "dev": "NODE_ENV=dev nodemon --ignore 'db/*' server.js"
+    "dev": "NODE_ENV=dev nodemon --ignore 'db/*' server.js",
+    "test": "NODE_ENV=test jest --env=node"
   },
   "engines": {
     "node": ">=18.16.0"
@@ -23,5 +24,8 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
     "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
